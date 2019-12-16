@@ -9,12 +9,12 @@ To configure the Stepper motor, Android app sends a command in string format to 
 
 Arduino             `<<<<================`                 HC-05 BLE Module/Android App
            
-            `{
+            {
               "command_type":0, 
               "step_angel":1.8,
               "speed":100,
               "direction":1
-            }`
+            }
 
 #### Step 2:
 The command received then parsed in JSON format and respective params are set for stepper motor and status 201 is sent and if some error occurs then status 500 is sent
